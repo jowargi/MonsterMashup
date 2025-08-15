@@ -1,0 +1,77 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #ff6b6b;
+}
+
+.character {
+  position: relative;
+  font-size: 80px;
+  margin: 40px 0;
+  height: 120px;
+}
+
+.head {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eyes,
+.mouth {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eyes {
+  top: 35px;
+}
+
+.mouth {
+  top: 70px;
+}
+
+.accessory {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  font-size: 40px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.controls button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #74b9ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.controls button:hover {
+  background: #0984e3;
+  transform: scale(1.05);
+}
+
+.controls button.random {
+  background: #ff7675;
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+
+.controls button.random:hover {
+  background: #d63031;
+}
